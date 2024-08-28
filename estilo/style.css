@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+   /* --color-primario:  black;*/
+   --color-primario:#6A9C89;
+   /* --color-secundario: white;*/
+   --color-secundario:#FFF5E4;
+   /* --color-terciario:#22D4FD;*/
+   --color-terciario:#C1D8C3;
+
+    --fuente-montserrat: 'Montserrat', sans-serif;
+    --fuente-krona: "Krona One", sans-serif;
+}
+
+body{
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    box-sizing: border-box;
+}
+
+nav{
+   display: flex;
+}
+
+nav a{
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-terciario);
+    padding: 2% 0% 0% 5%;
+    text-decoration: none;
+}
+
+
+
+.titulo-destaque{
+    color: var(--color-terciario);
+    font-family: var(--fuente-krona);
+
+}
+
+
+
+main{
+    display:   flex;
+    align-items: center;
+    margin: 5%;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+section{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+section div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+
+
+
+h1{
+    font-size: 2.25 rem;
+}
+
+p{
+    font-size: 1.5rem;
+    font-family: var(--fuente-montserrat);
+}
+
+h2{
+    font-family: var(--fuente-krona);
+    font-size: 1.5 rem;
+    font-weight:400 ;
+}
+
+div{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+div a{
+    width: 50%;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5 rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    border: 2px solid rgb(152, 152, 222);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+div a:hover{
+    background-color: rgb(20, 20, 72);
+    padding: 4%;
+}
+
+
+figure img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+footer{
+    background-color: var(--color-terciario);
+    padding: 24px;
+    color: black;
+    font-family:var(--fuente-montserrat);
+    text-align: center;
+}
+
+
+@media(max-width:1200px){
+   header{
+    padding: 10%;
+   }
+   
+   nav {
+    justify-content: center;
+   }
+    main{
+        flex-direction: column-reverse;
+    }
+
+    section{
+        width: auto;
+    }
+}
+
